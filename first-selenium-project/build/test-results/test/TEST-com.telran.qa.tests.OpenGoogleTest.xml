@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa.tests.OpenGoogleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-13T21:27:48" hostname="DESKTOP-NPA4CH3" time="4.139">
+  <properties/>
+  <testcase name="testOpenGoogle" classname="com.telran.qa.tests.OpenGoogleTest" time="0.749"/>
+  <testcase name="testSearchGoogle" classname="com.telran.qa.tests.OpenGoogleTest" time="3.381"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 25272
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1586813261.889][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+[1586813264.034][WARNING]: Timed out connecting to Chrome, retrying...
+апр 14, 2020 12:27:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1586813267.122][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586813267.296][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586813267.397][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586813267.638][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586813267.998][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586813268.104][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>
