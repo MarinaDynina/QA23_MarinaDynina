@@ -37,6 +37,7 @@
   </component>
   <component name="ProjectId" id="1aSDf5NC32YHV3OM3Vlmeg2a4M2" />
   <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/first-selenium-project/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -97,6 +98,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="OpenGoogleTest.testOpenProfile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/first-selenium-project" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.telran.qa.tests.OpenGoogleTest.testOpenProfile&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="OpenGoogleTest.testSearchGoogle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,6 +159,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.OpenGoogleTest" />
+        <item itemvalue="Gradle.OpenGoogleTest.testOpenProfile" />
         <item itemvalue="Gradle.OpenGoogleTest.testSearchGoogle" />
         <item itemvalue="Gradle.OpenGoogleTest.testOpenGoogle" />
         <item itemvalue="TestNG.OpenGoogleTest.testOpenGoogle" />
