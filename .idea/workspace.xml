@@ -39,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/first-selenium-project/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/first-selenium-project" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.OpenGoogleTest">
+  <component name="RunManager" selected="Gradle.OpenGoogleTest.testOpenGoogle">
     <configuration name="OpenGoogleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,10 +158,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.OpenGoogleTest" />
+        <item itemvalue="Gradle.OpenGoogleTest.testOpenGoogle" />
         <item itemvalue="Gradle.OpenGoogleTest.testOpenProfile" />
         <item itemvalue="Gradle.OpenGoogleTest.testSearchGoogle" />
-        <item itemvalue="Gradle.OpenGoogleTest.testOpenGoogle" />
+        <item itemvalue="Gradle.OpenGoogleTest" />
         <item itemvalue="TestNG.OpenGoogleTest.testOpenGoogle" />
       </list>
     </recent_temporary>
