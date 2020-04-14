@@ -17,7 +17,7 @@ public class LoginJira {
     }
 
     @Test
-    public void LoginJira() throws InterruptedException {
+    public void loginMyJira() throws InterruptedException {
         wd.findElement(By.className("aui-nav-link")).click();
 
         wd.findElement(By.id("login-form-username")).click();
