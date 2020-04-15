@@ -3,9 +3,8 @@ package com.telran.qa.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.*;
-
-import java.util.concurrent.TimeUnit;
 
 public class LoginJira {
     WebDriver wd;
@@ -18,23 +17,38 @@ public class LoginJira {
 
     @Test
     public void loginMyJira() throws InterruptedException {
-        wd.findElement(By.className("aui-nav-link")).click();
+        click(By.className("aui-nav-link"));
 
-        wd.findElement(By.id("login-form-username")).click();
-        wd.findElement(By.id("login-form-username")).clear();
-        wd.findElement(By.id("login-form-username")).sendKeys("Dyninamarina3");
+        type(By.id("login-form-username"), "Marinna"); // write the text "..." to the login location
 
-        wd.findElement(By.id("login-form-password")).click();
-        wd.findElement(By.id("login-form-password")).clear();
-        wd.findElement(By.id("login-form-password")).sendKeys("1qaz2wsx3edc");
+        type(By.id("login-form-password"), "1qaz2wsx3"); // write the text "..." to the password location
 
-        wd.findElement(By.name("login")).click();
+        click(By.name("login"));
 
-        Thread.sleep(15000);
+        Thread.sleep(10000);
+
+        Assert.assertTrue(isElementPresent(By.id("usernameerror"))); //check if there is such an element on the page
+
+        String errorMessage = wd.findElement(By.id("usernameerror")).getText();
+        Assert.assertEquals(errorMessage, "Sorry, your username and password are incorrect - please try again.");
+    }
+
+    public void type(By locator, String text) {
+        click(locator);
+        wd.findElement(locator).clear();
+        wd.findElement(locator).sendKeys(text);
+    }
+
+    public void click(By user) {
+        wd.findElement(user).click();
+    }
+
+    public boolean isElementPresent(By locator) {
+        return wd.findElements(locator).size() > 0;
     }
 
     @AfterClass
     public void tearDown() {
-        wd.quit();
+        //wd.quit();
     }
 }
