@@ -37,10 +37,11 @@ public class BoardCreationTests {
         click(By.id("login-submit"));
     }
 
-    private void fillLoginFormAtlassianAcc(String userEmail, String password) {
+    private void fillLoginFormAtlassianAcc(String userEmail, String password) throws InterruptedException {
         type(By.name("user"), userEmail);
+        Thread.sleep(2000);
         click(By.cssSelector(".button-green"));
-        type(By.className("kmGRCO"), password);
+        type(By.cssSelector("#password"), password);
     }
 
     private void initLogin() {
