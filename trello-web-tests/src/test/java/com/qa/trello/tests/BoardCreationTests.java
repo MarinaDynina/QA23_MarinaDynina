@@ -18,7 +18,7 @@ public class BoardCreationTests {
     public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
-        wait = new WebDriverWait(wd, 60);
+        wait = new WebDriverWait(wd, 40);
         wd.manage().window().maximize(); //stretch the screen to maximum
 
         wd.navigate().to("https://trello.com/");
@@ -29,6 +29,22 @@ public class BoardCreationTests {
         initLogin();
         fillLoginFormAtlassianAcc("Dyninamarina3@gmail.com", "1qaz2wsx3edcmad");
         confirmLogin();
+
+click(By.cssSelector("[name='add']"));
+click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
+
+type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
+click(By.cssSelector("[name='overflow-menu-horizontal']"));
+
+Thread.sleep(2000);
+
+//click(By.cssSelector("[name='check']"));
+
+//click(By.cssSelector("[type='button']"));
+
+//Thread.sleep(3000);
+
+//click(By.cssSelector("[name='house']"));
 
     }
 

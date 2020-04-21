@@ -62,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BoardCreationTests">
+  <component name="RunManager" selected="Gradle.BoardCreationTests.testBoardCreation">
     <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,8 +165,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
+        <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="Gradle.LoginJira" />
         <item itemvalue="Gradle.LoginJira.loginMyJira" />
         <item itemvalue="Gradle.LoginJira.jiraLogin" />
