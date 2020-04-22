@@ -30,22 +30,23 @@ public class BoardCreationTests {
         fillLoginFormAtlassianAcc("Dyninamarina3@gmail.com", "1qaz2wsx3edcmad");
         confirmLogin();
 
-click(By.cssSelector("[name='add']"));
-click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
+        click(By.cssSelector("[name='add']"));
+        click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
 
-type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
+        type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
 
-Thread.sleep(3000);
+        Thread.sleep(3000);
 
-click(By.cssSelector("[type='button']"));
-Thread.sleep(3000);
-click(By.cssSelector("[class*='js-fill-background-preview']"));
-click(By.cssSelector("[class*=photos]"));
+        click(By.cssSelector("[type='button']"));
+        Thread.sleep(3000);
+        click(By.cssSelector("[class*='js-fill-background-preview']"));
+        click(By.cssSelector("[class*=photos]"));
 
-click(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"));
-Thread.sleep(3000);
+        click(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"));
+        Thread.sleep(3000);
 
-click(By.cssSelector("[name='house']"));
+        click(By.cssSelector("[name='house']"));
+        click(By.cssSelector("[name='house']"));
 
     }
 

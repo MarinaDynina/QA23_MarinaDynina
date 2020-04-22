@@ -33,6 +33,18 @@ public class TeamCreationTests {
         confirmLogin();
 
         click(By.cssSelector("[name='add']"));
+        click(By.cssSelector("[data-test-id=header-create-team-button] p"));
+        type(By.cssSelector("._1CLyNodCAa-vQi"), "Trello Company");
+
+        click(By.cssSelector("#teamTypeSelect"));
+        click(By.cssSelector("[data-test-id*=engineering-it]"));
+        type(By.cssSelector("[id*=create-team-org-description]"), "we are cool");
+        click(By.cssSelector("[type=submit]"));
+        Thread.sleep(2000);
+
+        click(By.cssSelector("[data-test-id=show-later-button]"));
+
+
     }
 
     private void confirmLogin() {
