@@ -5,10 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,12 +14,12 @@ public class TeamCreationTests {
     WebDriver wd;
     WebDriverWait wait;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUt() {
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
+        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         wait = new WebDriverWait(wd, 50);
-        wd.manage().window().maximize(); //stretch the screen to maximum
+        wd.manage().window().maximize();
         wd.navigate().to("https://trello.com/");
     }
 
@@ -73,7 +70,7 @@ public class TeamCreationTests {
         wait.until(ExpectedConditions.presenceOfElementLocated(locator)).click();
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         //wd.quit();
     }
