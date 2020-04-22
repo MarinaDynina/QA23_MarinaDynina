@@ -1,185 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.qa.trello.tests.BoardCreationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-21T20:57:31" hostname="DESKTOP-NPA4CH3" time="40.055">
+<testsuite name="com.qa.trello.tests.BoardCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-22T12:56:38" hostname="DESKTOP-NPA4CH3" time="49.28">
   <properties/>
-  <testcase name="testBoardCreation" classname="com.qa.trello.tests.BoardCreationTests" time="40.055">
-    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;_2BQG4yPMt5s_hu lAz6zCcJVJePNN _3EwRO8vxIgkuHj _3Xj1tqB73NcWn3 _shCvHTl45iUhn&quot; name=&quot;check&quot; color=&quot;light&quot; role=&quot;presentation&quot;&gt;&lt;/span&gt; is not clickable at point (756, 58). Other element would receive the click: &lt;h1 class=&quot;_2Un9i9htRmbUrY&quot;&gt;...&lt;/h1&gt;&#10;  (Session info: chrome=81.0.4044.92)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-NPA4CH3', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\0D39~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b244498630478ef861ce635868dac7a0" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;_2BQG4yPMt5s_hu lAz6zCcJVJePNN _3EwRO8vxIgkuHj _3Xj1tqB73NcWn3 _shCvHTl45iUhn&quot; name=&quot;check&quot; color=&quot;light&quot; role=&quot;presentation&quot;&gt;&lt;/span&gt; is not clickable at point (756, 58). Other element would receive the click: &lt;h1 class=&quot;_2Un9i9htRmbUrY&quot;&gt;...&lt;/h1&gt;
-  (Session info: chrome=81.0.4044.92)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NPA4CH3', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\0D39~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b244498630478ef861ce635868dac7a0
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.qa.trello.tests.BoardCreationTests.click(BoardCreationTests.java:74)
-	at com.qa.trello.tests.BoardCreationTests.testBoardCreation(BoardCreationTests.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-</failure>
-  </testcase>
+  <testcase name="testBoardCreation" classname="com.qa.trello.tests.BoardCreationTests" time="49.28"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 5638
+  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 24455
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-апр 21, 2020 11:57:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+апр 22, 2020 3:56:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1587502647.713][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502647.814][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502647.918][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502648.022][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502648.125][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502648.226][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502648.328][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502649.435][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502649.624][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502649.728][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502649.873][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502649.986][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.134][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.237][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.530][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.632][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.734][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.838][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502650.941][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502651.043][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502651.210][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502651.406][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502651.509][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502651.610][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.029][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.133][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.244][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.349][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.455][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.558][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.663][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.866][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502661.969][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502662.072][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502662.264][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502662.584][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502662.687][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502662.924][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502663.402][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502663.707][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502663.992][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502664.094][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502664.244][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502664.362][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.048][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.149][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.251][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.353][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.456][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.558][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.660][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.762][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.866][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502680.969][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.071][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.174][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.279][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.381][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.484][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.586][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.691][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.793][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502681.895][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.003][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.108][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.213][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.319][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.420][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.525][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.627][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.730][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.833][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502682.935][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.038][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.141][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.243][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.347][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.448][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.550][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.652][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.755][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.857][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502683.959][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.061][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.163][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.266][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.369][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.471][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.574][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.677][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.780][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.885][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502684.987][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502686.641][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502687.492][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502687.595][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587502687.700][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560192.893][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560193.003][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560193.111][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560193.221][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560193.329][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560193.439][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560193.564][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560194.217][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560194.406][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560194.514][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560194.628][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560194.790][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560194.967][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.070][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.174][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.284][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.390][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.540][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.652][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.759][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560195.863][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.160][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.264][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.368][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.484][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.593][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.696][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.798][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560196.903][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.009][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.219][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.323][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.425][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.530][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.632][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.738][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.841][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560197.947][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560198.049][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560198.151][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560198.254][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560198.357][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560207.512][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560207.618][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560207.730][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560207.837][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560207.944][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.140][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.246][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.357][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.467][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.579][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.690][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.800][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560208.910][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.015][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.128][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.236][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.343][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.451][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.590][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560209.915][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560210.027][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560210.140][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560210.684][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560210.863][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560211.169][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560211.281][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560211.384][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560211.490][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560211.600][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560227.577][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560227.685][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560227.797][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560227.906][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.011][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.120][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.232][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.343][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.479][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.587][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.693][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.805][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560228.915][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.027][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.142][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.250][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.358][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.475][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.613][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.723][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.835][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560229.948][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.063][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.177][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.289][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.409][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.521][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.629][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.738][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.849][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560230.962][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.074][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.185][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.294][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.404][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.511][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.621][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.737][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.840][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560231.944][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.046][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.150][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.254][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.359][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.462][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.567][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.671][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.778][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.881][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560232.986][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560233.091][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560233.199][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560233.310][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560233.421][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560233.527][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560233.638][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560236.250][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560236.359][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560236.472][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587560236.582][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>

@@ -18,7 +18,7 @@ public class BoardCreationTests {
     public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
-        wait = new WebDriverWait(wd, 40);
+        wait = new WebDriverWait(wd, 50);
         wd.manage().window().maximize(); //stretch the screen to maximum
 
         wd.navigate().to("https://trello.com/");
@@ -34,17 +34,18 @@ click(By.cssSelector("[name='add']"));
 click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
 
 type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
-click(By.cssSelector("[name='overflow-menu-horizontal']"));
 
-Thread.sleep(2000);
+Thread.sleep(3000);
 
-//click(By.cssSelector("[name='check']"));
+click(By.cssSelector("[type='button']"));
+Thread.sleep(3000);
+click(By.cssSelector("[class*='js-fill-background-preview']"));
+click(By.cssSelector("[class*=photos]"));
 
-//click(By.cssSelector("[type='button']"));
+click(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"));
+Thread.sleep(3000);
 
-//Thread.sleep(3000);
-
-//click(By.cssSelector("[name='house']"));
+click(By.cssSelector("[name='house']"));
 
     }
 
