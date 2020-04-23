@@ -9,13 +9,13 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class TeamCreationTests {
+public class TeamCreationTests extends TestBase{
 
     WebDriver wd;
     WebDriverWait wait;
 
     @BeforeClass
-    public void setUt() {
+    public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         wait = new WebDriverWait(wd, 50);
@@ -29,19 +29,33 @@ public class TeamCreationTests {
         fillLoginFormAtlassianAcc("Dyninamarina3@gmail.com", "1qaz2wsx3edcmad");
         confirmLogin();
 
-        click(By.cssSelector("[name='add']"));
-        click(By.cssSelector("[data-test-id=header-create-team-button] p"));
-        type(By.cssSelector("._1CLyNodCAa-vQi"), "Trello Company");
+        initTeamCreation();
+        fillTeamForm();
+        confirmTeamCreation();
+        returnToHomePage();
+    }
 
+    private void returnToHomePage() {
+        click(By.cssSelector("[name='house']"));
+    }
+
+
+    private void confirmTeamCreation() throws InterruptedException {
+        click(By.cssSelector("[type=submit]"));
+        Thread.sleep(2000);
+        click(By.cssSelector("[data-test-id=show-later-button]"));
+    }
+
+    private void fillTeamForm() {
+        type(By.cssSelector("._1CLyNodCAa-vQi"), "Trello Company");
         click(By.cssSelector("#teamTypeSelect"));
         click(By.cssSelector("[data-test-id*=engineering-it]"));
         type(By.cssSelector("[id*=create-team-org-description]"), "we are cool");
-        click(By.cssSelector("[type=submit]"));
-        Thread.sleep(2000);
+    }
 
-        click(By.cssSelector("[data-test-id=show-later-button]"));
-
-
+    private void initTeamCreation() {
+        click(By.cssSelector("[name='add']"));
+        click(By.cssSelector("[data-test-id=header-create-team-button] p"));
     }
 
     private void confirmLogin() {

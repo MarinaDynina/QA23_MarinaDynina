@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class BoardCreationTests {
+public class BoardCreationTests extends TestBase {
     WebDriver wd;
     WebDriverWait wait;
 
@@ -18,7 +18,7 @@ public class BoardCreationTests {
     public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
-        wait = new WebDriverWait(wd, 50);
+        wait = new WebDriverWait(wd, 60);
         wd.manage().window().maximize(); //stretch the screen to maximum
 
         wd.navigate().to("https://trello.com/");
@@ -30,24 +30,30 @@ public class BoardCreationTests {
         fillLoginFormAtlassianAcc("Dyninamarina3@gmail.com", "1qaz2wsx3edcmad");
         confirmLogin();
 
-        click(By.cssSelector("[name='add']"));
-        click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
-
-        type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
-
+        initBoardCreation();
+        fillBoardForm();
         Thread.sleep(3000);
+        returnToHomePage();
 
+    }
+
+    private void returnToHomePage() {
+        click(By.cssSelector("[name='house']"));
+    }
+
+    private void fillBoardForm() throws InterruptedException {
+        type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
+        Thread.sleep(10000);
         click(By.cssSelector("[type='button']"));
         Thread.sleep(3000);
         click(By.cssSelector("[class*='js-fill-background-preview']"));
         click(By.cssSelector("[class*=photos]"));
-
         click(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"));
-        Thread.sleep(3000);
+    }
 
-        click(By.cssSelector("[name='house']"));
-        click(By.cssSelector("[name='house']"));
-
+    private void initBoardCreation() {
+        click(By.cssSelector("[name='add']"));
+        click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
     }
 
     private void confirmLogin() {
