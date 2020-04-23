@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
@@ -14,14 +16,14 @@ public class TestBase {
     WebDriver wd;
     WebDriverWait wait;
 
-    @BeforeMethod
-    public void setUp() {
+    @BeforeClass
+    public void setUp() throws InterruptedException {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
         wait = new WebDriverWait(wd, 60);
         wd.manage().window().maximize(); //stretch the screen to maximum
-
         wd.navigate().to("https://trello.com/");
+        login("Dyninamarina3@gmail.com", "1qaz2wsx3edcmad");
     }
 
     public void returnToHomePage() {
@@ -69,7 +71,7 @@ public class TestBase {
         wait.until(ExpectedConditions.presenceOfElementLocated(locator)).click();
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         // wd.quit();
     }
@@ -90,5 +92,11 @@ public class TestBase {
     public void initTeamCreation() {
         click(By.cssSelector("[name='add']"));
         click(By.cssSelector("[data-test-id=header-create-team-button] p"));
+    }
+
+    public void login(String email, String password) throws InterruptedException {
+        initLogin();
+        fillLoginFormAtlassianAcc(email, password);
+        confirmLogin();
     }
 }

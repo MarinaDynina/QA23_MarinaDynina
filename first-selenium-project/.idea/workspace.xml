@@ -25,6 +25,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/../trello-web-tests">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -70,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BoardCreationTests.testBoardCreation">
+  <component name="RunManager" selected="Gradle.BoardDeletionTests.testBoardDeletion">
     <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -111,12 +114,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LoginJira" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BoardDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.telran.qa.tests.LoginJira&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.BoardDeletionTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -131,12 +134,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TeamCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BoardDeletionTests.testBoardDeletion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.TeamCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.BoardDeletionTests.testBoardDeletion&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BoardDeletionTests.testBoardDeletion" />
+        <item itemvalue="Gradle.BoardDeletionTests" />
+        <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
         <item itemvalue="Gradle.TeamCreationTests.testTeamCreation" />
-        <item itemvalue="Gradle.TeamCreationTests" />
-        <item itemvalue="Gradle.BoardCreationTests" />
-        <item itemvalue="Gradle.LoginJira" />
       </list>
     </recent_temporary>
   </component>
