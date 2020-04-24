@@ -28,10 +28,13 @@ public class TestBase {
 
     public void returnToHomePage() {
         click(By.cssSelector("[name='house']"));
+        click(By.cssSelector("[name='house']"));
     }
 
     public void fillBoardForm() throws InterruptedException {
         type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
+        click(By.cssSelector(".W6rMLOx8U0MrPx"));
+        click(By.cssSelector("._1uK2vQ_aMRS2NU"));
         Thread.sleep(10000);
         click(By.cssSelector("[type='button']"));
         Thread.sleep(3000);
@@ -98,5 +101,32 @@ public class TestBase {
         initLogin();
         fillLoginFormAtlassianAcc(email, password);
         confirmLogin();
+    }
+
+    public void permanentlyDeleteBoard() {
+        click(By.cssSelector(".js-delete"));
+        confirm();
+    }
+
+    public void initBoardDeletionInMoreMenu() {
+        clickCloseBoardFromMoreMenu();
+        confirm();
+    }
+
+    public void confirm() {
+        click(By.cssSelector(".js-confirm"));
+    }
+
+    public void clickCloseBoardFromMoreMenu() {
+        click(By.cssSelector(".js-close-board"));
+    }
+
+    public void clickMoreButton() {
+        click(By.cssSelector(".js-open-more"));
+    }
+
+    public void openFirstPersonalBoard() {
+        click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+
     }
 }
