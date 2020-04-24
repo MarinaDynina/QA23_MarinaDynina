@@ -85,6 +85,11 @@ public class TestBase {
         click(By.cssSelector("[data-test-id=show-later-button]"));
     }
 
+    public int getBoardsCount() throws InterruptedException {
+        // System.out.println(wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")));
+        return wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 1;
+    }
+
     public void fillTeamForm() {
         type(By.cssSelector("._1CLyNodCAa-vQi"), "Trello Company");
         click(By.cssSelector("#teamTypeSelect"));
@@ -128,5 +133,12 @@ public class TestBase {
     public void openFirstPersonalBoard() {
         click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
 
+    }
+
+    public void createBoard() throws InterruptedException {
+        initBoardCreation();
+        fillBoardForm();
+        Thread.sleep(3000);
+        returnToHomePage();
     }
 }

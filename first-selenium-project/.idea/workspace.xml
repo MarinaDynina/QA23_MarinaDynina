@@ -73,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BoardDeletionTests.testBoardDeletion">
+  <component name="RunManager" selected="Gradle.TeamCreationTests.testTeamCreation">
     <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,12 +154,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TeamCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TeamCreationTests.testTeamCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.TeamCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.TeamCreationTests.testTeamCreation&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -176,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TeamCreationTests.testTeamCreation" />
+        <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
         <item itemvalue="Gradle.BoardDeletionTests.testBoardDeletion" />
         <item itemvalue="Gradle.BoardDeletionTests" />
         <item itemvalue="Gradle.BoardCreationTests" />
-        <item itemvalue="Gradle.TeamCreationTests" />
-        <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
       </list>
     </recent_temporary>
   </component>

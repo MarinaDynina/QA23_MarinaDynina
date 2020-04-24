@@ -1,10 +1,19 @@
 package com.qa.trello.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class BoardDeletionTests extends TestBase {
+
+    @BeforeMethod
+    public void ensurePreconditions() throws InterruptedException {
+        if (getBoardsCount() == 0) {
+            createBoard();
+        }
+
+    }
 
     @Test
     public void testBoardDeletion() throws InterruptedException {
@@ -25,8 +34,5 @@ public class BoardDeletionTests extends TestBase {
 
     }
 
-    public int getBoardsCount() throws InterruptedException {
-       // System.out.println(wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")));
-        return wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 1;
-    }
+
 }
