@@ -9,7 +9,7 @@ public class BoardDeletionTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (getBoardsCount() == 0) {
+        if (getBoardsCount() == 1) {
             createBoard();
         }
 

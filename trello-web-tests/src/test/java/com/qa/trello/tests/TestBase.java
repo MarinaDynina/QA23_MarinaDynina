@@ -141,4 +141,29 @@ public class TestBase {
         Thread.sleep(3000);
         returnToHomePage();
     }
+
+    public void deletionTeam() {
+        click(By.cssSelector(".quiet-button"));
+        confirm();
+    }
+
+    public void clickTeamSetting() {
+        click(By.cssSelector(".icon-gear.icon-sm"));
+    }
+
+    public void openFirstTeam() {
+        click(By.cssSelector("[data-test-id=home-team-tab-name]"));
+    }
+
+    public void createTeam() throws InterruptedException {
+        initTeamCreation();
+        fillTeamForm();
+        confirmTeamCreation();
+        Thread.sleep(2000);
+        returnToHomePage();
+    }
+    public int getTeamCount() {
+//        System.out.println(wd.findElements(By.cssSelector("[data-test-id=home-team-tab-name]")));
+        return wd.findElements(By.cssSelector("[data-test-id=home-team-tab-name]")).size();
+    }
 }
