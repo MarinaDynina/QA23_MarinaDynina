@@ -1,6 +1,7 @@
 package com.qa.trello.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,9 @@ public class BoardChangeTests extends TestBase {
     }
 
     public void chageNameOfBoard() {
-        //click(By.cssSelector(".js-rename-board"));
-        type(By.xpath("//*[@class='js-board-editing-target board-header-btn-text']"), "My new board");
+
+        click(By.cssSelector(".js-rename-board"));
+        wd.findElement(By.cssSelector("input.js-board-name-input")).sendKeys("My new board" + Keys.ENTER);
+
     }
 }
