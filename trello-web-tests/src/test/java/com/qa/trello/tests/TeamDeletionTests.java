@@ -1,6 +1,5 @@
 package com.qa.trello.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +15,7 @@ public class TeamDeletionTests extends TestBase {
 
     @Test
     public void testTeamDeletion() throws InterruptedException {
-//      Thread.sleep(30000);
+
         int before = getTeamCount();
         openFirstTeam();
         clickTeamSetting();

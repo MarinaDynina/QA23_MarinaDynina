@@ -1,6 +1,7 @@
 package com.qa.trello.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -166,4 +167,20 @@ public class TestBase {
 //        System.out.println(wd.findElements(By.cssSelector("[data-test-id=home-team-tab-name]")));
         return wd.findElements(By.cssSelector("[data-test-id=home-team-tab-name]")).size();
     }
+
+    public void chageNameOfBoard() {
+        click(By.cssSelector(".js-rename-board"));
+        wd.findElement(By.cssSelector("input.js-board-name-input")).sendKeys("My new board" + Keys.ENTER);
+
+    }
+
+    public void changeTeamName() {
+        type(By.cssSelector("#displayName"), "New Trello Company");
+        wd.findElement(By.cssSelector("#displayName")).sendKeys(Keys.ENTER);
+    }
+
+    public void changeTeamProfile() {
+        click(By.cssSelector("[name=edit]"));
+    }
+
 }

@@ -21,11 +21,4 @@ public class BoardChangeTests extends TestBase {
         Thread.sleep(3000);
         returnToHomePage();
     }
-
-    public void chageNameOfBoard() {
-
-        click(By.cssSelector(".js-rename-board"));
-        wd.findElement(By.cssSelector("input.js-board-name-input")).sendKeys("My new board" + Keys.ENTER);
-
-    }
 }
