@@ -82,8 +82,7 @@ public class TestBase {
 
     public void confirmTeamCreation() throws InterruptedException {
         click(By.cssSelector("[type=submit]"));
-        Thread.sleep(2000);
-        click(By.cssSelector("[data-test-id=show-later-button]"));
+//      click(By.cssSelector("[data-test-id=show-later-button]"));
     }
 
     public int getBoardsCount() throws InterruptedException {
@@ -161,6 +160,8 @@ public class TestBase {
         fillTeamForm();
         confirmTeamCreation();
         Thread.sleep(2000);
+        inviteTeamLater();
+        Thread.sleep(2000);
         returnToHomePage();
     }
     public int getTeamCount() {
@@ -182,5 +183,22 @@ public class TestBase {
     public void changeTeamProfile() {
         click(By.cssSelector("[name=edit]"));
     }
+
+    public void inviteTeamLater() {
+        if (isElementPresent(By.cssSelector("[data-test-id=show-later-button]"))) {
+            click(By.cssSelector("[data-test-id=show-later-button]"));
+        }
+    }
+
+    public boolean isElementPresent(By locator) {
+        return wd.findElements(locator).size() > 0;
+
+    }
+
+    public boolean isOnBoardsPage() {
+        String url = wd.getCurrentUrl();
+        return url.contains("boards");
+    }
+
 
 }

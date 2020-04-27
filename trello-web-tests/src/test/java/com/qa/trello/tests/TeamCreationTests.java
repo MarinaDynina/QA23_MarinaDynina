@@ -3,8 +3,6 @@ package com.qa.trello.tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.sql.SQLOutput;
-
 public class TeamCreationTests extends TestBase {
 
     @Test
@@ -15,13 +13,17 @@ public class TeamCreationTests extends TestBase {
         fillTeamForm();
         confirmTeamCreation();
         Thread.sleep(2000);
+        inviteTeamLater();
+        Thread.sleep(2000);
         returnToHomePage();
         Thread.sleep(2000);
         int after = getTeamCount();
 
- System.out.println("was: " + before + " now:" + after);
-      Assert.assertEquals(after, before+1);
+        System.out.println("was: " + before + " now:" + after);
+        Assert.assertEquals(after, before + 1);
 
     }
+
+
 
 }

@@ -15,7 +15,7 @@ public class TeamDeletionTests extends TestBase {
 
     @Test
     public void testTeamDeletion() throws InterruptedException {
-
+        Thread.sleep(10000);
         int before = getTeamCount();
         openFirstTeam();
         clickTeamSetting();
@@ -28,8 +28,6 @@ public class TeamDeletionTests extends TestBase {
         Assert.assertEquals(after, before - 1);
 
     }
-
-
 
 
 }

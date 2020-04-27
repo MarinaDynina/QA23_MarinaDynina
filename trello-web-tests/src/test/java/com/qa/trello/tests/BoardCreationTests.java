@@ -6,7 +6,7 @@ public class BoardCreationTests extends TestBase {
 
     @Test
     public void testBoardCreation() throws InterruptedException {
-        Thread.sleep(10000);
+        Thread.sleep(20000);
         int before = getBoardsCount();
         initBoardCreation();
         fillBoardForm();
