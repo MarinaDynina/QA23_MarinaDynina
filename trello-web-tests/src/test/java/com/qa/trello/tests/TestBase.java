@@ -19,6 +19,10 @@ public class TestBase {
 
     @BeforeClass
     public void setUp() throws InterruptedException {
+        init();
+    }
+
+    public void init() throws InterruptedException {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
         wait = new WebDriverWait(wd, 60);
@@ -77,7 +81,11 @@ public class TestBase {
 
     @AfterClass
     public void tearDown() {
-        // wd.quit();
+        stop();
+    }
+
+    public void stop() {
+        wd.quit();
     }
 
     public void confirmTeamCreation() throws InterruptedException {
