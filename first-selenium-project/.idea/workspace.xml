@@ -74,12 +74,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.TeamChangeTests">
-    <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BoardChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.BoardCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.BoardChangeTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TeamChangeTests" />
+        <item itemvalue="Gradle.BoardChangeTests" />
         <item itemvalue="Gradle.TeamChangeTests.changeTeamTests" />
         <item itemvalue="Gradle.TeamDeletionTests" />
         <item itemvalue="Gradle.BoardDeletionTests" />
-        <item itemvalue="Gradle.BoardCreationTests" />
       </list>
     </recent_temporary>
   </component>

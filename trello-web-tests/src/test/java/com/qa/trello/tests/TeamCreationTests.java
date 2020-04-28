@@ -8,16 +8,16 @@ public class TeamCreationTests extends TestBase {
     @Test
     public void testTeamCreation() throws InterruptedException {
         Thread.sleep(20000);
-        int before = getTeamCount();
-        initTeamCreation();
-        fillTeamForm();
-        confirmTeamCreation();
+        int before = app.getTeamCount();
+        app.initTeamCreation();
+        app.fillTeamForm();
+        app.confirmTeamCreation();
         Thread.sleep(2000);
-        inviteTeamLater();
+        app.inviteTeamLater();
         Thread.sleep(2000);
-        returnToHomePage();
+        app.returnToHomePage();
         Thread.sleep(2000);
-        int after = getTeamCount();
+        int after = app.getTeamCount();
 
         System.out.println("was: " + before + " now:" + after);
         Assert.assertEquals(after, before + 1);

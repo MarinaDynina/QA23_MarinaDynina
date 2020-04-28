@@ -7,19 +7,19 @@ public class TeamChangeTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (getTeamCount() == 0) {
-            createTeam();
+        if (app.getTeamCount() == 0) {
+            app.createTeam();
         }
     }
 
     @Test
     public void changeTeamTests() {
 
-        openFirstTeam();
-        clickTeamSetting();
-        changeTeamProfile();
-        changeTeamName();
-        returnToHomePage();
+        app.openFirstTeam();
+        app.clickTeamSetting();
+        app.changeTeamProfile();
+        app.changeTeamName();
+        app.returnToHomePage();
     }
 
 }

@@ -1,6 +1,5 @@
 package com.qa.trello.tests;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,17 +9,17 @@ public class BoardChangeTests extends TestBase {
  //       if (!isOnBoardsPage()) {
  //           click(By.cssSelector("[href$=boards]"));
  //       }
-        if (getBoardsCount() == 1) {
-            createBoard();
+        if (app.getBoardsCount() == 1) {
+            app.createBoard();
         }
     }
 
     @Test
     public void changeOfBoard() throws InterruptedException {
-        openFirstPersonalBoard();
+        app.openFirstPersonalBoard();
         Thread.sleep(5000);
-        chageNameOfBoard();
+        app.chageNameOfBoard();
         Thread.sleep(3000);
-        returnToHomePage();
+        app.returnToHomePage();
     }
 }
