@@ -1,18 +1,20 @@
 package com.qa.trello.tests;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
 
-    protected ApplicationManager app = new ApplicationManager();
+    protected static ApplicationManager app = new ApplicationManager();
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp() throws InterruptedException {
         app.init();
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown() {
         app.stop();
     }

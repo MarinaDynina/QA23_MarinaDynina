@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qa.trello.tests.BoardCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-28T17:49:07" hostname="DESKTOP-NPA4CH3" time="43.565">
+  <properties/>
+  <testcase name="testBoardCreation" classname="com.qa.trello.tests.BoardCreationTests" time="43.565"/>
+  <system-out><![CDATA[was: 8 now: 9
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

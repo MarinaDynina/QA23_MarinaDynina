@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qa.trello.tests.TeamCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-28T17:50:11" hostname="DESKTOP-NPA4CH3" time="29.146">
+  <properties/>
+  <testcase name="testTeamCreation" classname="com.qa.trello.tests.TeamCreationTests" time="29.146"/>
+  <system-out><![CDATA[was: 11 now:12
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

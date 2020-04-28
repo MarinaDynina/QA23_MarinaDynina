@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qa.trello.tests.BoardDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-28T17:49:51" hostname="DESKTOP-NPA4CH3" time="15.11">
+  <properties/>
+  <testcase name="testBoardDeletion" classname="com.qa.trello.tests.BoardDeletionTests" time="15.11"/>
+  <system-out><![CDATA[9
+was: 9now: 8
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
