@@ -1,4 +1,4 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 public class BoardChangeTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
- //       if (!isOnBoardsPage()) {
- //           click(By.cssSelector("[href$=boards]"));
- //       }
+        if (!app.getBoard().isOnBoardsPage()) {
+        app.getBoard().openBoardsPage();
+              }
         if (app.getBoard().getBoardsCount() == 1) {
             app.getBoard().createBoard();
         }

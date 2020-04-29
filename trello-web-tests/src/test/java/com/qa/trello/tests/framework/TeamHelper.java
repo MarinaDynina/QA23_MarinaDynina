@@ -1,4 +1,4 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.framework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

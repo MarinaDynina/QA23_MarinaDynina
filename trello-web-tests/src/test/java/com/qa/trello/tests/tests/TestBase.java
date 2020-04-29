@@ -1,5 +1,6 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.tests;
 
+import com.qa.trello.tests.framework.ApplicationManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 

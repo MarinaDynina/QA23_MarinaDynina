@@ -1,4 +1,4 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.framework;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +19,6 @@ public class ApplicationManager {
         wait = new WebDriverWait(wd, 60);
         wd.manage().window().maximize(); //stretch the screen to maximum
         wd.navigate().to("https://trello.com/");
-
         session = new SessionHelper(wd);
         session.login("Dyninamarina3@gmail.com", "1qaz2wsx3edcmad");
 

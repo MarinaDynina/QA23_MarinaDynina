@@ -1,4 +1,4 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

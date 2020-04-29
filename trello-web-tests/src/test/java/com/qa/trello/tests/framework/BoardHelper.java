@@ -1,4 +1,4 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.framework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -71,5 +71,9 @@ public class BoardHelper extends HelperBase {
     public boolean isOnBoardsPage() {
         String url = wd.getCurrentUrl();
         return url.contains("boards");
+    }
+
+    public void openBoardsPage() {
+        click(By.cssSelector("[href$=boards]"));
     }
 }

@@ -1,4 +1,4 @@
-package com.qa.trello.tests;
+package com.qa.trello.tests.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
