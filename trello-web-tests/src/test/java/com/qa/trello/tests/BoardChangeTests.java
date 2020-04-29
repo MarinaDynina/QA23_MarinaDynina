@@ -9,17 +9,17 @@ public class BoardChangeTests extends TestBase {
  //       if (!isOnBoardsPage()) {
  //           click(By.cssSelector("[href$=boards]"));
  //       }
-        if (app.getBoardsCount() == 1) {
-            app.createBoard();
+        if (app.getBoard().getBoardsCount() == 1) {
+            app.getBoard().createBoard();
         }
     }
 
     @Test
     public void changeOfBoard() throws InterruptedException {
-        app.openFirstPersonalBoard();
+        app.getBoard().openFirstPersonalBoard();
         Thread.sleep(5000);
-        app.chageNameOfBoard();
+        app.getBoard().chageNameOfBoard();
         Thread.sleep(3000);
-        app.returnToHomePage();
+        app.getBoard().returnToHomePage();
     }
 }

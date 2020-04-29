@@ -7,12 +7,12 @@ public class BoardCreationTests extends TestBase {
     @Test
     public void testBoardCreation() throws InterruptedException {
         Thread.sleep(20000);
-        int before = app.getBoardsCount();
-        app.initBoardCreation();
-        app.fillBoardForm();
+        int before = app.getBoard().getBoardsCount();
+        app.getBoard().initBoardCreation();
+        app.getBoard().fillBoardForm();
         Thread.sleep(3000);
-        app.returnToHomePage();
-        int after = app.getBoardsCount();
+        app.getBoard().returnToHomePage();
+        int after = app.getBoard().getBoardsCount();
 
         System.out.println("was: " + before+ " now: " + after);
         Assert.assertEquals(after, before+1);

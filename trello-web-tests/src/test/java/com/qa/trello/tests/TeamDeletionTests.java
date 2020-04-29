@@ -8,21 +8,21 @@ public class TeamDeletionTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (app.getTeamCount() == 0) {
-            app.createTeam();
+        if (app.getTeam().getTeamCount() == 0) {
+            app.getTeam().createTeam();
         }
     }
 
     @Test
     public void testTeamDeletion() throws InterruptedException {
         Thread.sleep(10000);
-        int before = app.getTeamCount();
-        app.openFirstTeam();
-        app.clickTeamSetting();
+        int before = app.getTeam().getTeamCount();
+        app.getTeam().openFirstTeam();
+        app.getTeam().clickTeamSetting();
         Thread.sleep(3000);
-        app.deletionTeam();
-        app.returnToHomePage();
-        int after = app.getTeamCount();
+        app.getTeam().deletionTeam();
+        app.getTeam().returnToHomePage();
+        int after = app.getTeam().getTeamCount();
 
         System.out.println("was: " + before + " now: " + after);
         Assert.assertEquals(after, before - 1);

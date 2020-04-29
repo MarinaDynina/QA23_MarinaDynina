@@ -12,23 +12,23 @@ public class BoardDeletionTests extends TestBase {
   //          click(By.cssSelector("[href$=boards]"));
   //      }
 
-        if (app.getBoardsCount() == 1) {
-            app.createBoard();
+        if (app.getBoard().getBoardsCount() == 1) {
+            app.getBoard().createBoard();
         }
     }
 
     @Test
     public void testBoardDeletion() throws InterruptedException {
         Thread.sleep(10000);
-        int before = app.getBoardsCount();
+        int before = app.getBoard().getBoardsCount();
         System.out.println(before);
         Thread.sleep(2000);
-        app.openFirstPersonalBoard();
-        app.clickMoreButton();
-        app.initBoardDeletionInMoreMenu();
-        app.permanentlyDeleteBoard();
-        app.returnToHomePage();
-        int after = app.getBoardsCount();
+        app.getBoard().openFirstPersonalBoard();
+        app.getBoard().clickMoreButton();
+        app.getBoard().initBoardDeletionInMoreMenu();
+        app.getBoard().permanentlyDeleteBoard();
+        app.getBoard().returnToHomePage();
+        int after = app.getBoard().getBoardsCount();
 
         System.out.println("was: " + before + "now: " + after);
 
