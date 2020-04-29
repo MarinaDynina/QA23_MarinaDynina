@@ -16,7 +16,6 @@ public class ApplicationManager {
     public void init() throws InterruptedException {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
-        wait = new WebDriverWait(wd, 60);
         wd.manage().window().maximize(); //stretch the screen to maximum
         wd.navigate().to("https://trello.com/");
         session = new SessionHelper(wd);

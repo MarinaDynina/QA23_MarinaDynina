@@ -10,18 +10,18 @@ public class SessionHelper extends HelperBase {
 
     public void confirmLogin() {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-submit"))).click(); //waiting for item on page
-        click(By.id("login-submit"));
+        click(By.id("login-submit"), 60);
     }
 
     public void fillLoginFormAtlassianAcc(String userEmail, String password) throws InterruptedException {
         type(By.name("user"), userEmail);
         Thread.sleep(2000);
-        click(By.cssSelector(".button-green"));
+        click(By.cssSelector(".button-green"), 60);
         type(By.cssSelector("#password"), password);
     }
 
     public void initLogin() {
-        click(By.cssSelector("[href='/login']"));
+        click(By.cssSelector("[href='/login']"), 60);
     }
 
     public void login(String email, String password) throws InterruptedException {

@@ -12,19 +12,19 @@ public class BoardHelper extends HelperBase {
 
     public void fillBoardForm() throws InterruptedException {
         type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
-        click(By.cssSelector(".W6rMLOx8U0MrPx"));
-        click(By.cssSelector("._1uK2vQ_aMRS2NU"));
+        click(By.cssSelector(".W6rMLOx8U0MrPx"), 60);
+        click(By.cssSelector("._1uK2vQ_aMRS2NU"), 60);
         Thread.sleep(10000);
-        click(By.cssSelector("[type='button']"));
+        click(By.cssSelector("[type='button']"), 60);
         Thread.sleep(3000);
-        click(By.cssSelector("[class*='js-fill-background-preview']"));
-        click(By.cssSelector("[class*=photos]"));
-        click(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"));
+        click(By.cssSelector("[class*='js-fill-background-preview']"), 60);
+        click(By.cssSelector("[class*=photos]"), 60);
+        click(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"), 60);
     }
 
     public void initBoardCreation() {
-        click(By.cssSelector("[name='add']"));
-        click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"));
+        click(By.cssSelector("[name='add']"), 60);
+        click(By.cssSelector("[data-test-id=\"header-create-board-button\"] span"), 60);
     }
 
     public int getBoardsCount() throws InterruptedException {
@@ -33,7 +33,7 @@ public class BoardHelper extends HelperBase {
     }
 
     public void permanentlyDeleteBoard() {
-        click(By.cssSelector(".js-delete"));
+        click(By.cssSelector(".js-delete"), 60);
         confirm();
     }
 
@@ -43,15 +43,15 @@ public class BoardHelper extends HelperBase {
     }
 
     public void clickCloseBoardFromMoreMenu() {
-        click(By.cssSelector(".js-close-board"));
+        click(By.cssSelector(".js-close-board"), 60);
     }
 
     public void clickMoreButton() {
-        click(By.cssSelector(".js-open-more"));
+        click(By.cssSelector(".js-open-more"), 60);
     }
 
     public void openFirstPersonalBoard() {
-        click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+        click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"), 60);
 
     }
 
@@ -63,7 +63,7 @@ public class BoardHelper extends HelperBase {
     }
 
     public void chageNameOfBoard() {
-        click(By.cssSelector(".js-rename-board"));
+        click(By.cssSelector(".js-rename-board"), 60);
         wd.findElement(By.cssSelector("input.js-board-name-input")).sendKeys("My new board" + Keys.ENTER);
 
     }
@@ -74,6 +74,6 @@ public class BoardHelper extends HelperBase {
     }
 
     public void openBoardsPage() {
-        click(By.cssSelector("[href$=boards]"));
+        click(By.cssSelector("[href$=boards]"), 60);
     }
 }

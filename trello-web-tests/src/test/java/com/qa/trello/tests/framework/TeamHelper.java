@@ -10,33 +10,33 @@ public class TeamHelper extends HelperBase {
     }
 
     public void confirmTeamCreation() throws InterruptedException {
-        click(By.cssSelector("[type=submit]"));
+        click(By.cssSelector("[type=submit]"), 60);
 //      click(By.cssSelector("[data-test-id=show-later-button]"));
     }
 
     public void fillTeamForm() {
         type(By.cssSelector("._1CLyNodCAa-vQi"), "Trello Company");
-        click(By.cssSelector("#teamTypeSelect"));
-        click(By.cssSelector("[data-test-id*=engineering-it]"));
+        click(By.cssSelector("#teamTypeSelect"), 60);
+        click(By.cssSelector("[data-test-id*=engineering-it]"), 60);
         type(By.cssSelector("[id*=create-team-org-description]"), "we are cool");
     }
 
     public void initTeamCreation() {
-        click(By.cssSelector("[name='add']"));
-        click(By.cssSelector("[data-test-id=header-create-team-button] p"));
+        click(By.cssSelector("[name='add']"), 60);
+        click(By.cssSelector("[data-test-id=header-create-team-button] p"), 60);
     }
 
     public void deletionTeam() {
-        click(By.cssSelector(".quiet-button"));
+        click(By.cssSelector(".quiet-button"), 60);
         confirm();
     }
 
     public void clickTeamSetting() {
-        click(By.cssSelector(".icon-gear.icon-sm"));
+        click(By.cssSelector(".icon-gear.icon-sm"), 60);
     }
 
     public void openFirstTeam() {
-        click(By.cssSelector("[data-test-id=home-team-tab-name]"));
+        click(By.cssSelector("[data-test-id=home-team-tab-name]"), 60);
     }
 
     public void createTeam() throws InterruptedException {
@@ -60,12 +60,12 @@ public class TeamHelper extends HelperBase {
     }
 
     public void changeTeamProfile() {
-        click(By.cssSelector("[name=edit]"));
+        click(By.cssSelector("[name=edit]"), 60);
     }
 
     public void inviteTeamLater() {
         if (isElementPresent(By.cssSelector("[data-test-id=show-later-button]"))) {
-            click(By.cssSelector("[data-test-id=show-later-button]"));
+            click(By.cssSelector("[data-test-id=show-later-button]"), 60);
         }
     }
 }
