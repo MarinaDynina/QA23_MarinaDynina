@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HelperBase {
     WebDriver wd;
-    WebDriverWait wait;
+//    WebDriverWait wait;
 
 
     public HelperBase(WebDriver wd) {
@@ -15,23 +15,27 @@ public class HelperBase {
     }
 
     public void returnToHomePage() {
-        click(By.cssSelector("[name='house']"), 60);
-        click(By.cssSelector("[name='house']"), 60);
+        waitForElementClickableAndClick(By.cssSelector("[name='house']"), 60);
+//        waitForElementLocatedAndClick(By.cssSelector("[name='house']"), 60);
     }
 
     public void type(By locator, String text) {
-        click(locator, 60);
+        waitForElementLocatedAndClick(locator, 60);
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
     }
 
-    public void click(By locator, int timeOut) {
-       new WebDriverWait(wd, timeOut).until(ExpectedConditions.presenceOfElementLocated(locator)).click();
+    public void waitForElementLocatedAndClick(By locator, int timeOut) {
+        new WebDriverWait(wd, timeOut).until(ExpectedConditions.presenceOfElementLocated(locator)).click();
 //        wd.findElement(locator).click();
     }
 
+    public void waitForElementClickableAndClick(By locator, int timeOut) {
+        new WebDriverWait(wd, timeOut).until(ExpectedConditions.elementToBeClickable(locator)).click();
+    }
+
     public void confirm() {
-        click(By.cssSelector(".js-confirm"), 60);
+        waitForElementLocatedAndClick(By.cssSelector(".js-confirm"), 60);
     }
 
     public boolean isElementPresent(By locator) {
