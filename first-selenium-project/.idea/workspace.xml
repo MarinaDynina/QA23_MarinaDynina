@@ -76,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'com.qa.trello.tests'">
+  <component name="RunManager" selected="Gradle.TeamCreationTests.testTeamCreation">
     <configuration name="BoardChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -102,7 +102,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.BoardCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardCreationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -117,12 +117,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TeamChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TeamCreationTests.testTeamCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.TeamChangeTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.TeamCreationTests.testTeamCreation&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TeamCreationTests.testTeamCreation" />
         <item itemvalue="Gradle.Tests in 'com.qa.trello.tests'" />
+        <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="Gradle.BoardChangeTests" />
         <item itemvalue="Gradle.Tests in 'com.qa.trello.tests.tests'" />
-        <item itemvalue="Gradle.BoardCreationTests" />
-        <item itemvalue="Gradle.TeamChangeTests" />
       </list>
     </recent_temporary>
   </component>

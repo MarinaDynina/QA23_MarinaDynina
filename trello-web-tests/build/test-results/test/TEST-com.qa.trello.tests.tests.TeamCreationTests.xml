@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.qa.trello.tests.tests.TeamCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-03T11:37:10" hostname="DESKTOP-NPA4CH3" time="28.085">
+<testsuite name="com.qa.trello.tests.tests.TeamCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-05T10:49:20" hostname="DESKTOP-NPA4CH3" time="36.261">
   <properties/>
-  <testcase name="testTeamCreation" classname="com.qa.trello.tests.tests.TeamCreationTests" time="28.085"/>
-  <system-out><![CDATA[was: 12 now:13
+  <testcase name="testTeamCreation" classname="com.qa.trello.tests.tests.TeamCreationTests" time="36.261"/>
+  <system-out><![CDATA[was: 16 now:17
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[[1588675780.683][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675780.789][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675780.902][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.013][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.122][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.231][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.343][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.454][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.566][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.676][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.791][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675781.898][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.001][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.108][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.225][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.369][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.476][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.581][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.691][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.796][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675782.907][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675783.022][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675783.134][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675783.246][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675783.354][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675783.467][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675783.577][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675785.507][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588675787.328][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
 </testsuite>

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 public class TeamChangeTests extends TestBase {
 
     @BeforeMethod
+
     public void ensurePreconditions() throws InterruptedException {
         if (app.getTeam().getTeamCount() == 0) {
             app.getTeam().createTeam();

@@ -1,10 +1,18 @@
 package com.qa.trello.tests.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TeamCreationTests extends TestBase {
 
+//@BeforeMethod
+//public void ensurePreconditions(){
+//    if(!app.getBoard().isOnBoardsPage())
+//   {
+//        app.getBoard().waitForElementLocatedAndClick(By.cssSelector("[href$=boards]"), 60);
+//   }
+//}
     @Test
     public void testTeamCreation() throws InterruptedException {
         Thread.sleep(20000);

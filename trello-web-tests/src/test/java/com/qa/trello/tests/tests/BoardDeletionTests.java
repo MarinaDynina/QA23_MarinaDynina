@@ -8,9 +8,7 @@ public class BoardDeletionTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-  //      if (!isOnBoardsPage()) {
-  //          click(By.cssSelector("[href$=boards]"));
-  //      }
+
 
         if (app.getBoard().getBoardsCount() == 1) {
             app.getBoard().createBoard();

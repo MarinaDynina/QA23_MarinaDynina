@@ -19,7 +19,7 @@ public class BoardHelper extends HelperBase {
         Thread.sleep(3000);
         waitForElementLocatedAndClick(By.cssSelector("[class*='js-fill-background-preview']"), 60);
         waitForElementLocatedAndClick(By.cssSelector("[class*=photos]"), 60);
-        waitForElementLocatedAndClick(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[21]"), 60);
+        waitForElementLocatedAndClick(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[17]"), 60);
     }
 
     public void initBoardCreation() {
