@@ -24,3 +24,12 @@ test{
     }
 }
 
+task testBoards(type:Test){
+    useTestNG{
+        suites 'src/test/resources/testng-boards.xml'
+    }
+    if (project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+}
+
