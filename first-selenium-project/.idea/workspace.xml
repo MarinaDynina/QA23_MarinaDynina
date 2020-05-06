@@ -76,13 +76,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml">
-    <configuration name="BoardChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.BoardDeletionTests">
+    <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardChangeTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardCreationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -97,12 +97,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BoardDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardDeletionTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BoardDeletionTests" />
         <item itemvalue="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml" />
         <item itemvalue="Gradle.Tests in 'com.qa.trello.tests'" />
         <item itemvalue="Gradle.TeamCreationTests.testTeamCreation" />
         <item itemvalue="Gradle.BoardCreationTests" />
-        <item itemvalue="Gradle.BoardChangeTests" />
       </list>
     </recent_temporary>
   </component>
