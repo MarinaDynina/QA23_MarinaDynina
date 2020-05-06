@@ -15,7 +15,7 @@ public class HelperBase {
     }
 
     public void returnToHomePage() {
-        waitForElementClickableAndClick(By.cssSelector("[name='house']"), 60);
+        waitForElementClickableAndClick(By.cssSelector("[name='house']"), 50);
 //        waitForElementLocatedAndClick(By.cssSelector("[name='house']"), 60);
     }
 

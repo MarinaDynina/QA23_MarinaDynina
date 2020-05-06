@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Teams" verbose="1" >
+    <test name="Teams">
+        <classes>
+            <class name="com.qa.trello.tests.tests.TeamCreationTests"/>
+            <class name="com.qa.trello.tests.tests.TeamChangeTests"/>
+            <class name="com.qa.trello.tests.tests.TeamDeletionTests"/>
+        </classes>
+    </test>
+</suite>

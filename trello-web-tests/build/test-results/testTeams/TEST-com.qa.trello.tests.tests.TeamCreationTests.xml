@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qa.trello.tests.tests.TeamCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-06T22:34:52" hostname="DESKTOP-NPA4CH3" time="34.536">
+  <properties/>
+  <testcase name="testTeamCreation" classname="com.qa.trello.tests.tests.TeamCreationTests" time="34.536"/>
+  <system-out><![CDATA[was: 24 now:25
+]]></system-out>
+  <system-err><![CDATA[[1588804512.190][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.291][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.398][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.503][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.605][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.706][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.808][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804512.909][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.011][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.113][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.216][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.319][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.420][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.522][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804513.625][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804514.905][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804517.788][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804517.890][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804518.007][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804518.109][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588804518.211][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>
