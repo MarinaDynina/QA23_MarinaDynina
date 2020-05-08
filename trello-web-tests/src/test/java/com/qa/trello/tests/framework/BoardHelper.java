@@ -14,13 +14,13 @@ public class BoardHelper extends HelperBase {
         super(wd);
     }
 
-    public void fillBoardForm(BoardData boardData) throws InterruptedException {
-        typeBoardName(boardData.getNameOfBoard());
+    public void fillBoardForm(BoardData board) throws InterruptedException {
+        typeBoardName(board.getNameOfBoard());
         selectNoTeamForBoardCreationForm();
         Thread.sleep(10000);
         waitForElementLocatedAndClick(By.cssSelector("[type='button']"), 60);
         Thread.sleep(3000);
-        selectColorOfBoard(boardData.getColorsOfBoard());
+        selectColorOfBoard(board.getColorsOfBoard());
     }
 
     private void selectColorOfBoard(String colorsOfBoard) {
@@ -35,6 +35,7 @@ public class BoardHelper extends HelperBase {
 
     public void selectNoTeamForBoardCreationForm() {
         waitForElementLocatedAndClick(By.cssSelector(".W6rMLOx8U0MrPx"), 60);
+//        waitForElementLocatedAndClick(By.xpath("//button[@class='_2jR0BZMM5cBReR']//..//..//../ul/li[1]"), 60);
         waitForElementLocatedAndClick(By.cssSelector("._1uK2vQ_aMRS2NU"), 60);
     }
 
@@ -64,7 +65,7 @@ public class BoardHelper extends HelperBase {
 
     public void clickMoreButton() {
         WebElement moreButton = new WebDriverWait(wd, 30).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".js-open-more")));
-        if(!moreButton.isDisplayed()) {
+        if (!moreButton.isDisplayed()) {
             wd.findElement(By.cssSelector(".board-header-btn.mod-show-menu.js-show-sidebar")).click();
         }
         wd.findElement(By.cssSelector(".js-open-more")).click();
@@ -79,7 +80,10 @@ public class BoardHelper extends HelperBase {
 
     public void createBoard() throws InterruptedException {
         initBoardCreation();
-        fillBoardForm(new BoardData("My board", "//div[@class='photo-attribution-component large']/../../..//div[17]"));
+        fillBoardForm(new BoardData()
+                .withNameOfBoard("My board")
+//                .withColorsOfBoard("[title='green']"));
+                .withColorsOfBoard("//div[@class='photo-attribution-component large']/../../..//div[17]"));
         Thread.sleep(3000);
         returnToHomePage();
     }

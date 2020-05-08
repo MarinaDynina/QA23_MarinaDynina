@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml">
+  <component name="RunManager" selected="Gradle.BoardCreationTests">
     <configuration name="BoardChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,10 +162,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml" />
         <item itemvalue="Gradle.Tests in 'com.qa.trello.tests'" />
         <item itemvalue="Gradle.BoardChangeTests" />
-        <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng-boards.xml" />
       </list>
     </recent_temporary>
