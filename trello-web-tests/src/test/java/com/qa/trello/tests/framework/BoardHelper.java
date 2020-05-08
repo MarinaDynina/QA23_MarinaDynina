@@ -1,5 +1,6 @@
 package com.qa.trello.tests.framework;
 
+import com.qa.trello.tests.model.BoardData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,16 +14,28 @@ public class BoardHelper extends HelperBase {
         super(wd);
     }
 
-    public void fillBoardForm() throws InterruptedException {
-        type(By.cssSelector("[data-test-id='create-board-title-input']"), "My board");
-        waitForElementLocatedAndClick(By.cssSelector(".W6rMLOx8U0MrPx"), 60);
-        waitForElementLocatedAndClick(By.cssSelector("._1uK2vQ_aMRS2NU"), 60);
+    public void fillBoardForm(BoardData boardData) throws InterruptedException {
+        typeBoardName(boardData.getNameOfBoard());
+        selectNoTeamForBoardCreationForm();
         Thread.sleep(10000);
         waitForElementLocatedAndClick(By.cssSelector("[type='button']"), 60);
         Thread.sleep(3000);
+        selectColorOfBoard(boardData.getColorsOfBoard());
+    }
+
+    private void selectColorOfBoard(String colorsOfBoard) {
         waitForElementLocatedAndClick(By.cssSelector("[class*='js-fill-background-preview']"), 60);
         waitForElementLocatedAndClick(By.cssSelector("[class*=photos]"), 60);
-        waitForElementLocatedAndClick(By.xpath("//div[@class='photo-attribution-component large']/../../..//div[17]"), 60);
+        waitForElementLocatedAndClick(By.xpath(colorsOfBoard), 60);
+    }
+
+    public void typeBoardName(String nameOfBoard) {
+        type(By.cssSelector("[data-test-id='create-board-title-input']"), nameOfBoard);
+    }
+
+    public void selectNoTeamForBoardCreationForm() {
+        waitForElementLocatedAndClick(By.cssSelector(".W6rMLOx8U0MrPx"), 60);
+        waitForElementLocatedAndClick(By.cssSelector("._1uK2vQ_aMRS2NU"), 60);
     }
 
     public void initBoardCreation() {
@@ -66,7 +79,7 @@ public class BoardHelper extends HelperBase {
 
     public void createBoard() throws InterruptedException {
         initBoardCreation();
-        fillBoardForm();
+        fillBoardForm(new BoardData("My board", "//div[@class='photo-attribution-component large']/../../..//div[17]"));
         Thread.sleep(3000);
         returnToHomePage();
     }
