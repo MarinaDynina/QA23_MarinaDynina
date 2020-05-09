@@ -12,9 +12,9 @@ public class BoardCreationTests extends TestBase {
         app.getBoard().initBoardCreation();
         app.getBoard().fillBoardForm(
                 new BoardData()
-                .withNameOfBoard("My board")
+                .withNameOfBoard("My board" +System.currentTimeMillis())
 //                .withColorsOfBoard("[title='green']"));
-                .withColorsOfBoard("//div[@class='photo-attribution-component large']/../../..//div[17]"));
+                .withColorsOfBoard("//div[@class='photo-attribution-component large']/../../..//div[14]"));
         Thread.sleep(3000);
         app.getBoard().returnToHomePage();
         int after = app.getBoard().getBoardsCount();

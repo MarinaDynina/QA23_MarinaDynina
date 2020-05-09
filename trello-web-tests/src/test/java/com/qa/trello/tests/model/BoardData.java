@@ -4,12 +4,6 @@ public class BoardData {
     private String nameOfBoard;
     private String colorsOfBoard;
 
-//    public BoardData(String nameOfBoard, String colorsOfBoard) {
-//        this.nameOfBoard = nameOfBoard;
-//        this.colorsOfBoard = colorsOfBoard;
-//    }
-
-
     public BoardData withNameOfBoard(String nameOfBoard) {
         this.nameOfBoard = nameOfBoard;
         return this;

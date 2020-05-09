@@ -1,5 +1,6 @@
 package com.qa.trello.tests.framework;
 
+import com.qa.trello.tests.model.TeamData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -14,10 +15,10 @@ public class TeamHelper extends HelperBase {
 //      click(By.cssSelector("[data-test-id=show-later-button]"));
     }
 
-    public void fillTeamForm() {
-        type(By.cssSelector("._1CLyNodCAa-vQi"), "Trello Company");
+    public void fillTeamForm(TeamData team) {
+        type(By.cssSelector("._1CLyNodCAa-vQi"), team.getNameOfTeam());
         waitForElementLocatedAndClick(By.cssSelector("#teamTypeSelect"), 60);
-        waitForElementLocatedAndClick(By.cssSelector("[data-test-id*=engineering-it]"), 60);
+        waitForElementLocatedAndClick(By.cssSelector(team.getFieldOfTeam()), 60);
         type(By.cssSelector("[id*=create-team-org-description]"), "we are cool");
     }
 
@@ -41,7 +42,10 @@ public class TeamHelper extends HelperBase {
 
     public void createTeam() throws InterruptedException {
         initTeamCreation();
-        fillTeamForm();
+        fillTeamForm(
+                new TeamData()
+                .withNameOfTeam("Trello Company")
+                .withFieldOfTeam("[data-test-id*=engineering-it])"));
         confirmTeamCreation();
         Thread.sleep(2000);
         inviteTeamLater();

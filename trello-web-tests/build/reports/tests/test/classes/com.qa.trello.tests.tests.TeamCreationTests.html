@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">42.648s</div>
+<div class="counter">1m58.00s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,53 +66,44 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="setUp"></a>
-<h3 class="failures">setUp</h3>
+<a name="testTeamCreation"></a>
+<h3 class="failures">testTeamCreation</h3>
 <span class="code">
-<pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=81.0.4044.92)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NPA4CH3', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\0D39~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50544}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 680b25f2d8d2da49b52a5d6f1b7a52e1
-*** Element info: {Using=css selector, value=#password}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.trello.tests.framework.HelperBase.waitForElementLocatedAndClick(HelperBase.java:35)
-	at com.qa.trello.tests.framework.HelperBase.type(HelperBase.java:29)
-	at com.qa.trello.tests.framework.SessionHelper.fillLoginFormAtlassianAcc(SessionHelper.java:20)
-	at com.qa.trello.tests.framework.SessionHelper.login(SessionHelper.java:29)
-	at com.qa.trello.tests.framework.ApplicationManager.init(ApplicationManager.java:40)
-	at com.qa.trello.tests.tests.TestBase.setUp(TestBase.java:15)
+<pre>java.lang.AssertionError: expected [27] but found [0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.qa.trello.tests.tests.TeamCreationTests.testTeamCreation(TeamCreationTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -163,11 +154,117 @@ Session ID: 680b25f2d8d2da49b52a5d6f1b7a52e1
 </tr>
 </thead>
 <tr>
-<td class="failures">setUp</td>
-<td class="failures">42.648s</td>
+<td class="failures">testTeamCreation</td>
+<td class="failures">1m58.00s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>was: 26 now:0
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[1589050288.642][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050288.744][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050288.845][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050288.951][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.055][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.157][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.259][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.361][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.464][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.566][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.743][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.845][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050289.947][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.050][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.152][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.263][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.365][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.468][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.574][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.675][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.778][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.881][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050290.986][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.087][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.197][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.299][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.401][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.502][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.606][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.709][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.812][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050291.919][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.022][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.124][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.225][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.374][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.480][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.583][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.687][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.789][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050292.901][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.006][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.108][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.210][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.314][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.416][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.519][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.622][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.725][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.828][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050293.930][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.037][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.148][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.251][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.353][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.462][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.563][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.668][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.771][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.874][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050294.977][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.078][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.180][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.282][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.384][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.486][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.589][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.692][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.794][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.895][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050295.997][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050296.098][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050296.200][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050296.303][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050296.405][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050296.507][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050298.354][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050298.546][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050298.921][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.126][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.230][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.332][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.644][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.748][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.894][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050300.996][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050301.097][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050301.200][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050301.302][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050301.508][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050301.734][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050301.835][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589050304.440][SEVERE]: Timed out receiving message from renderer: 0.100
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -177,7 +274,7 @@ Session ID: 680b25f2d8d2da49b52a5d6f1b7a52e1
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 09.05.2020 1:02:00</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 09.05.2020 21:52:10</p>
 </div>
 </div>
 </body>

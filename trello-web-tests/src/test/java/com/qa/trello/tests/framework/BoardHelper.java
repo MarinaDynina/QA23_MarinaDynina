@@ -25,6 +25,7 @@ public class BoardHelper extends HelperBase {
 
     private void selectColorOfBoard(String colorsOfBoard) {
         waitForElementLocatedAndClick(By.cssSelector("[class*='js-fill-background-preview']"), 60);
+//        waitForElementLocatedAndClick(By.cssSelector("[class*=colors]"), 60);
         waitForElementLocatedAndClick(By.cssSelector("[class*=photos]"), 60);
         waitForElementLocatedAndClick(By.xpath(colorsOfBoard), 60);
     }
@@ -83,7 +84,7 @@ public class BoardHelper extends HelperBase {
         fillBoardForm(new BoardData()
                 .withNameOfBoard("My board")
 //                .withColorsOfBoard("[title='green']"));
-                .withColorsOfBoard("//div[@class='photo-attribution-component large']/../../..//div[17]"));
+              .withColorsOfBoard("//div[@class='photo-attribution-component large']/../../..//div[17]"));
         Thread.sleep(3000);
         returnToHomePage();
     }
