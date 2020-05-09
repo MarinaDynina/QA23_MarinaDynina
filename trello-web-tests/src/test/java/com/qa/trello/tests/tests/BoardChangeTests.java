@@ -20,6 +20,6 @@ public class BoardChangeTests extends TestBase {
         Thread.sleep(5000);
         app.getBoard().chageNameOfBoard();
         Thread.sleep(3000);
-        app.getBoard().returnToHomePage();
+        app.getBoard().goToBoardsPageUrl();
     }
 }

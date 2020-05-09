@@ -25,7 +25,7 @@ public class BoardDeletionTests extends TestBase {
         app.getBoard().clickMoreButton();
         app.getBoard().initBoardDeletionInMoreMenu();
         app.getBoard().permanentlyDeleteBoard();
-        app.getBoard().returnToHomePage();
+        app.getBoard().goToBoardsPageUrl();
         int after = app.getBoard().getBoardsCount();
 
         System.out.println("was: " + before + "now: " + after);

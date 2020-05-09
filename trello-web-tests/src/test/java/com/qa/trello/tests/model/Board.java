@@ -1,15 +1,15 @@
 package com.qa.trello.tests.model;
 
-public class BoardData {
+public class Board {
     private String nameOfBoard;
     private String colorsOfBoard;
 
-    public BoardData withNameOfBoard(String nameOfBoard) {
+    public Board withNameOfBoard(String nameOfBoard) {
         this.nameOfBoard = nameOfBoard;
         return this;
     }
 
-    public BoardData withColorsOfBoard(String colorsOfBoard) {
+    public Board withColorsOfBoard(String colorsOfBoard) {
         this.colorsOfBoard = colorsOfBoard;
         return this;
     }

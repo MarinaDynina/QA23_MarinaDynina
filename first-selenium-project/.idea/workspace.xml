@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TeamCreationTests">
+  <component name="RunManager" selected="Gradle.TeamDeletionTests">
     <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,12 +140,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'com.qa.trello.tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TeamDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.*&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.TeamDeletionTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TeamDeletionTests" />
         <item itemvalue="Gradle.TeamCreationTests" />
         <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
         <item itemvalue="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml" />
-        <item itemvalue="Gradle.Tests in 'com.qa.trello.tests'" />
       </list>
     </recent_temporary>
   </component>

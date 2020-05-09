@@ -1,6 +1,6 @@
 package com.qa.trello.tests.framework;
 
-import com.qa.trello.tests.model.BoardData;
+import com.qa.trello.tests.model.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ public class BoardHelper extends HelperBase {
         super(wd);
     }
 
-    public void fillBoardForm(BoardData board) throws InterruptedException {
+    public void fillBoardForm(Board board) throws InterruptedException {
         typeBoardName(board.getNameOfBoard());
         selectNoTeamForBoardCreationForm();
         Thread.sleep(10000);
@@ -81,12 +81,12 @@ public class BoardHelper extends HelperBase {
 
     public void createBoard() throws InterruptedException {
         initBoardCreation();
-        fillBoardForm(new BoardData()
+        fillBoardForm(new Board()
                 .withNameOfBoard("My board")
 //                .withColorsOfBoard("[title='green']"));
               .withColorsOfBoard("//div[@class='photo-attribution-component large']/../../..//div[17]"));
         Thread.sleep(3000);
-        returnToHomePage();
+        goToBoardsPageUrl();
     }
 
     public void chageNameOfBoard() {

@@ -20,8 +20,9 @@ public class HelperBase {
         this.wd = wd;
     }
 
-    public void returnToHomePage() {
-        waitForElementClickableAndClick(By.cssSelector("[name='house']"), 50);
+    public void goToBoardsPageUrl() {
+        wd.navigate().to("https://trello.com/marinadynina/boards");
+//        waitForElementClickableAndClick(By.cssSelector("[name='house']"), 50);
 //        waitForElementLocatedAndClick(By.cssSelector("[name='house']"), 60);
     }
 

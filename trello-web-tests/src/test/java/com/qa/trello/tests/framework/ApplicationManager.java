@@ -32,7 +32,7 @@ public class ApplicationManager {
             wd = new FirefoxDriver();
         }
 
-        wd = new ChromeDriver();
+//        wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //implicit expectation
         wd.manage().window().maximize(); //stretch the screen to maximum
         wd.navigate().to("https://trello.com/");

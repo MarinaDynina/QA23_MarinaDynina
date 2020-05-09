@@ -20,7 +20,7 @@ public class TeamChangeTests extends TestBase {
         app.getTeam().clickTeamSetting();
         app.getTeam().changeTeamProfile();
         app.getTeam().changeTeamName();
-        app.getTeam().returnToHomePage();
+        app.getTeam().goToBoardsPageUrl();
     }
 
 }

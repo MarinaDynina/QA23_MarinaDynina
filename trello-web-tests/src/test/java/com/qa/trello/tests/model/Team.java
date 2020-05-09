@@ -1,15 +1,15 @@
 package com.qa.trello.tests.model;
 
-public class TeamData {
+public class Team {
     private String nameOfTeam;
     private String fieldOfTeam;
 
-    public TeamData withNameOfTeam(String nameOfTeam) {
+    public Team withNameOfTeam(String nameOfTeam) {
         this.nameOfTeam = nameOfTeam;
         return this;
     }
 
-    public TeamData withFieldOfTeam(String fieldOfTeam) {
+    public Team withFieldOfTeam(String fieldOfTeam) {
         this.fieldOfTeam = fieldOfTeam;
         return this;
     }
