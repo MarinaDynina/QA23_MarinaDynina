@@ -79,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BoardCreationTests.testBoardCreation">
+  <component name="RunManager" selected="Gradle.BoardDeletionTests">
     <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,6 +106,26 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardCreationTests.testBoardCreation&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardDeletionTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -160,23 +180,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="trello-web-tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/../trello-web-tests/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BoardDeletionTests" />
         <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
         <item itemvalue="Gradle.BoardCreationTests" />
         <item itemvalue="Gradle.TeamDeletionTests" />
         <item itemvalue="Gradle.TeamCreationTests" />
-        <item itemvalue="TestNG.C:/Users/Марина/Documents/GitHub/QA23_MarinaDynina/trello-web-tests/src/test/resources/testng.xml" />
       </list>
     </recent_temporary>
   </component>

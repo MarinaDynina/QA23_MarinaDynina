@@ -1,0 +1,4 @@
+26187 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Start test testBoardDeletion
+75531 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Stop test testBoardDeletion
+00:29:17.978 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Start test testBoardDeletion
+00:30:06.582 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Stop test testBoardDeletion
