@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 public class TestBase {
 
@@ -23,8 +24,8 @@ public class TestBase {
     }
 
     @BeforeMethod
-    public void logTestStart(Method m) {
-        logger.info("Start test "+ m.getName());
+    public void logTestStart(Method m, Object[] p) {
+        logger.info("Start test "+ m.getName() + " with parametrs " + Arrays.asList(p));
     }
 
     @AfterMethod

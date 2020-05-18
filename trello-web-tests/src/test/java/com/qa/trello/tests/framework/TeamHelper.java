@@ -44,8 +44,8 @@ public class TeamHelper extends HelperBase {
         initTeamCreation();
         fillTeamForm(
                 new Team()
-                .withNameOfTeam("Trello Company")
-                .withFieldOfTeam("[data-test-id*=engineering-it]"));
+                .withNameOfTeam("Trello Company"));
+//                .withFieldOfTeam("[data-test-id*=engineering-it]"));
         confirmTeamCreation();
         Thread.sleep(2000);
         inviteTeamLater();
