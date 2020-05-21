@@ -27,9 +27,11 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        waitForElementLocatedAndClick(locator, 60);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
+        if(text != null) {
+            waitForElementLocatedAndClick(locator, 60);
+            wd.findElement(locator).clear();
+            wd.findElement(locator).sendKeys(text);
+        }
     }
 
     public void waitForElementLocatedAndClick(By locator, int timeOut) {

@@ -24,12 +24,14 @@ public class BoardHelper extends HelperBase {
     }
 
     public void selectColorOfBoard(String colorsOfBoard) {
-//  waitForElementLocatedAndClick(By.cssSelector("[name='overflow-menu-horizontal']"), 60);
-//  waitForElementLocatedAndClick(By.cssSelector("[title='blue']"), 60);
-//        waitForElementLocatedAndClick(By.cssSelector("[class*='js-fill-background-preview']"), 60);
-//        waitForElementLocatedAndClick(By.cssSelector("[class*=colors]"), 60);
-//        waitForElementLocatedAndClick(By.cssSelector("[class*=photos]"), 60);
-//        waitForElementLocatedAndClick(By.xpath(colorsOfBoard), 60);
+        if (colorsOfBoard != null) {
+            waitForElementLocatedAndClick(By.cssSelector("[name='overflow-menu-horizontal']"), 60);
+            waitForElementLocatedAndClick(By.cssSelector("[title='blue']"), 60);
+            waitForElementLocatedAndClick(By.cssSelector("[class*='js-fill-background-preview']"), 60);
+            waitForElementLocatedAndClick(By.cssSelector("[class*=colors]"), 60);
+            waitForElementLocatedAndClick(By.cssSelector("[class*=photos]"), 60);
+            waitForElementLocatedAndClick(By.xpath(colorsOfBoard), 60);
+        }
     }
 
     public void typeBoardName(String nameOfBoard) {
