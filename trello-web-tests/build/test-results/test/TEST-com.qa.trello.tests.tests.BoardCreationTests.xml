@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qa.trello.tests.tests.BoardCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-21T12:50:56" hostname="DESKTOP-NPA4CH3" time="153.721">
+  <properties/>
+  <testcase name="testBoardCreation[0](com.qa.trello.tests.model.Board@36fef51c)" classname="com.qa.trello.tests.tests.BoardCreationTests" time="64.832"/>
+  <testcase name="testBoardCreation[1](com.qa.trello.tests.model.Board@6fc4ece8)" classname="com.qa.trello.tests.tests.BoardCreationTests" time="45.822"/>
+  <testcase name="testBoardCreation[2](com.qa.trello.tests.model.Board@25e754c2)" classname="com.qa.trello.tests.tests.BoardCreationTests" time="43.054"/>
+  <system-out><![CDATA[15:50:56.120 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Start test testBoardCreation with parametrs [com.qa.trello.tests.model.Board@36fef51c]
+was: 25 now: 26
+15:52:00.968 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Stop test testBoardCreation
+15:52:00.969 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Start test testBoardCreation with parametrs [com.qa.trello.tests.model.Board@6fc4ece8]
+was: 26 now: 27
+15:52:46.792 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Stop test testBoardCreation
+15:52:46.793 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Start test testBoardCreation with parametrs [com.qa.trello.tests.model.Board@25e754c2]
+was: 27 now: 28
+15:53:29.851 [Test worker] INFO  com.qa.trello.tests.tests.TestBase - Stop test testBoardCreation
+]]></system-out>
+  <system-err><![CDATA[[1590065476.333][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065476.446][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065476.563][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065476.672][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065476.779][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065476.884][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065476.986][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.091][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.196][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.304][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.411][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.521][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.630][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.739][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.844][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065477.957][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065478.159][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065478.266][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065478.372][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065478.481][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065478.587][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065478.694][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065480.694][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065516.522][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065516.627][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065516.766][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065516.871][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065562.784][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065604.898][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590065605.988][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>
