@@ -80,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BoardCreationTests">
+  <component name="RunManager" selected="TestNG.ProfileModificationTests">
     <configuration name="BoardCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -121,46 +121,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BoardDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.BoardDeletionTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TeamCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../trello-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.qa.trello.tests.tests.TeamCreationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="BoardCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trello-web-tests.test" />
       <extension name="coverage">
@@ -178,13 +138,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProfileModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="trello-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.trello.tests.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.trello.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.trello.tests.tests.ProfileModificationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamCreationTests.testTeamCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="trello-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.trello.tests.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.trello.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.trello.tests.tests.TeamCreationTests" />
+      <option name="METHOD_NAME" value="testTeamCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProfileModificationTests" />
+        <item itemvalue="TestNG.TeamCreationTests.testTeamCreation" />
         <item itemvalue="TestNG.BoardCreationTests" />
         <item itemvalue="Gradle.BoardCreationTests.testBoardCreation" />
         <item itemvalue="Gradle.BoardCreationTests" />
-        <item itemvalue="Gradle.TeamCreationTests" />
-        <item itemvalue="Gradle.BoardDeletionTests" />
       </list>
     </recent_temporary>
   </component>

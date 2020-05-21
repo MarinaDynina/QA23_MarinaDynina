@@ -17,6 +17,11 @@ dependencies {
     implementation 'ch.qos.logback:logback-classic:1.2.3'
 }
 test{
+    useTestNG()
+}
+
+
+task testRegression(type:Test){
     useTestNG{
         suites 'src/test/resources/testng.xml'
     }

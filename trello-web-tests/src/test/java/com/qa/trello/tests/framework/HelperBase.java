@@ -39,7 +39,8 @@ public class HelperBase {
 //        wd.findElement(locator).click();
     }
 
-    public void waitForElementClickableAndClick(By locator, int timeOut) {
+    public void waitForElementClickableAndClick(By locator) {
+        long timeOut = 60;
         new WebDriverWait(wd, timeOut).until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
