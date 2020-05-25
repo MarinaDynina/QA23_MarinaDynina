@@ -48,7 +48,8 @@ wd.findElement(locator).sendKeys(file.getAbsolutePath());
 
     public void upLoadPhoto() throws InterruptedException {
         attachFile(By.cssSelector(".css-1b4o0qu"),
-                new File("src/test/resources/flower.png"));
+                new File("C:\\Users\\Марина\\Documents\\GitHub\\QA23_MarinaDynina\\trello-web-tests\\src\\test\\resources\\flower.png"));
+        Thread.sleep(4000);
    waitForElementClickableAndClick(By.cssSelector("button.css-1b4o0qu"));
     }
 
