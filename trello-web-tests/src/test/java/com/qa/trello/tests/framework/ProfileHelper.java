@@ -3,7 +3,6 @@ package com.qa.trello.tests.framework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
@@ -43,14 +42,19 @@ public class ProfileHelper extends HelperBase {
     }
 
     public void attachFile(By locator, File file) {
-wd.findElement(locator).sendKeys(file.getAbsolutePath());
+        wd.findElement(locator).sendKeys(file.getAbsolutePath());
     }
 
     public void upLoadPhoto() throws InterruptedException {
-        attachFile(By.cssSelector(".css-1b4o0qu"),
+        attachFile(By.cssSelector("input#image-input"),
                 new File("C:\\Users\\Марина\\Documents\\GitHub\\QA23_MarinaDynina\\trello-web-tests\\src\\test\\resources\\flower.png"));
         Thread.sleep(4000);
-   waitForElementClickableAndClick(By.cssSelector("button.css-1b4o0qu"));
+        waitForElementClickableAndClick(By.xpath("//*[@class='css-1yx6h60']"));
     }
 
+
+    public boolean avatarAdded() {
+        return isElementPresent(By.cssSelector(".sc-giadOv"));
+    }
 }
+
