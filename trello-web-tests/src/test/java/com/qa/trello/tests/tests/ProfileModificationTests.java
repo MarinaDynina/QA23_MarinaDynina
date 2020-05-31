@@ -23,6 +23,7 @@ public class ProfileModificationTests extends TestBase {
         Assert.assertTrue(app.getProfile().avatarAdded());
 
         app.getProfile().returnToTrello();
+        app.getProfile().refreshPage();
         app.getBoard().goToBoardsPageUrl();
 
         logger.info("screenShot before: screen- " + beforeScreenShot + ".png");
