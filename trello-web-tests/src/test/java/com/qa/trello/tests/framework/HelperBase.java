@@ -52,14 +52,16 @@ public class HelperBase {
         return wd.findElements(locator).size() > 0;
     }
 
-    public void takeScreenshot() {
+    public void takeScreenshot(long timeMillis) {
         File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
-        File screenshot = new File("screen" +System.currentTimeMillis()+".png");
+        File screenshot = new File("screen" + timeMillis +".png");
 
         try {
             Files.copy(tmp, screenshot);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 }
